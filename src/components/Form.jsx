@@ -6,16 +6,17 @@ const Form = () => {
   return (
     <div>
     <Box sx={{ 
-    width: "80%", 
-    height: 500, 
+    width: { xs: '95%', sm: '80%', md: '60%' }, 
+    height: 400, 
+    maxWidth: { xs: 400, sm: 'none' },
     bgcolor: "white", 
     boxShadow: 3, 
     borderRadius: 2,
     padding:1,
-    marginLeft:"120px",
+    mx:'auto',
     marginTop:"60px" 
   }}>
-    <Grid container spacing={2} style={{width:"80%",marginTop:"100px",marginLeft:"100px"}}>
+    <Grid container spacing={2}  sx={{ width: { xs: '90%', sm: '80%' }, mx: 'auto',mt: { xs: 2, sm: 4 } }}>
     <Grid item size={12}>
      <Typography variant='h4'style={{color:'darkgreen',textAlign:'center'}}>Employee Form</Typography>
      <br />
